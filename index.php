@@ -11,7 +11,7 @@ if(isset($_GET['logout'])){
     session_destroy();
     header("Location: index.php"); //Redirect the user
 }
- 
+   
 if(isset($_POST['enter'])){
     if($_POST['name'] != ""){
         $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
@@ -114,4 +114,4 @@ function loginForm(){
 </html>
 <?php
 }
-?>
+?> 
